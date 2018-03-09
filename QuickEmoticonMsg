@@ -1,0 +1,30 @@
+
+public class QuickEmoticonMsg {
+	String SMILE_FACE = ":D";
+	String SAD_FACE = ":/";
+	String CRYING_FACE = "T-T";
+    String SURPRISE_FACE = ":O";
+    String HEART = "<3";
+    
+    
+    private String  selecionarOpc(String opcao){
+		QuickEmoticonMsg.selecionarOpc(1)= ":/";
+		QuickEmoticonMsg.selecionarOpc(2)= "T-T";
+		QuickEmoticonMsg.selecionarOpc(3)= ":O";
+		QuickEmoticonMsg.selecionarOpc(4)= "<3";
+		QuickEmoticonMsg.selecionarOpc(0)= ":D";
+	}
+		
+    public String   QuickemoticonMsg( String remetente, String destinatario,  String opcao){
+    	return  selecionarOpc;
+    	
+    }
+    
+  }
+    
+    
+    
+	
+
+
+}
