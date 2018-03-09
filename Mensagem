@@ -1,0 +1,9 @@
+
+public class Mensagem extends WTTextual{
+    private  String remetente;
+    private WTTtextual destinatario;
+    protected String  conteudo;
+    
+    
+	
+}
