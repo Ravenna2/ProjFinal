@@ -1,0 +1,59 @@
+public class WTTextual implements QuickEmoticonMsg, LongTextMsg{
+	 private  String nickname;
+	 private boolean estaOnline;
+	 private String msgAtual;
+	 
+	public  WTTextual( String nickname) {
+		WTTextual WTTextual = new WTTextual(nickname);
+		} 
+	
+    public String VerStatus() {
+		if (estaOnline == true) {
+			return (nickname + "está online :)");
+	     }  else {
+			return (nickname + "está offline :(");
+		}
+   }
+	
+    public static void Conectar() {
+    	WTTextual.estaOnline(true);
+    }
+    
+    public static void Desconectar() {
+    	WTTextual.estaOnline(false);
+    }
+    
+    public boolean estaOnline(){
+    	if (estaOnline == true){
+    		return true; 
+    	}  else {
+    		return false;
+    	}
+    }
+    
+    public static void  enviarMsg(WTTextual destinatario, int opcao ){
+    	if (destinatario.estaOnline() == true ){
+    		QuickEmoticon.selecionarOpc = nickname 
+    	}  else throws WTDisconnectedException{
+    		return ("Usuário offline. Tente novamente mais tarde.");
+    	}
+    }
+    
+    public static void enviarMsg(WTTextual destinatario, String txt) {
+    	if (destinatario.estaOnline()) == true) {
+    		LongTextMsg.remetente  = nickname
+    	} else throws WTDisconnectedException {
+    		return ("Usuário offline. Tente novamente mais tarde")
+    	}
+    }
+    
+    public static void receberMsg(){
+    	System.out.println(nickname);
+    	System.out.println(Mensagem);
+    } 
+    
+		
+	
+		
+
+	}
