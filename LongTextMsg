@@ -1,0 +1,8 @@
+
+public class LongTextMsg {
+	
+	public static  void( String remetente, String destinatario, String texto){
+		
+	}
+
+}
